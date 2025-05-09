@@ -2,7 +2,7 @@
 /firebase-debug.log
 /firebase-debug.*.log
 
-# Firebase config
+# Firebase conf
 .firebaserc
 /firebase.json
 
