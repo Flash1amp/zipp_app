@@ -27,9 +27,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Environment files
-.env               # Игнорировать основной .env (с секретами)
-!.env.*            # Разрешить все .env.* файлы (.env.local, .env.dev и т.д.)
-.env.private       # Дополнительно можно игнорировать конкретные файлы
+.env
+.env.local
 
 # System files
 .DS_Store
