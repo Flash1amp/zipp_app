@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Профиль</title>
+	<link rel="stylesheet" href="/css/profile.css">
+	<script type="module" src="/js/profile.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<aside class="sidebar">
+			<img src="/images/logo.svg" alt="logo" class="logo">
+			<button onclick="window.location.href='/index.html'">Главная</button>
+			<button id="rentals-btn">Аренды</button>
+			<button id="logout-btn" class="logout">Выйти</button>
+		</aside>
+		<main>
+			<div class="profile-header">
+				<img src="/images/profile.svg" alt="Профиль" class="avatar">
+				<div class="profile-info">
+					<h1 id="user-email">Пользователь</h1>
+					<div class="reputation-box">
+						<p><strong>Репутация:</strong> <span id="reputation">—</span></p>
+						<p><strong>Роль:</strong> <span id="role">Пользователь</span></p>
+					</div>
+				</div>
+			</div>
+			<section id="rentals">
+				<h2>Мои аренды</h2>
+				<hr>
+				<div id="rental-list"></div>
+			</section>
+			<section id="reputation-history">
+				<h2>История репутации</h2>
+				<hr>
+				<div id="reputation-list"></div>
+			</section>
+		</main>
+	</div>
+</body>
+
+</html>

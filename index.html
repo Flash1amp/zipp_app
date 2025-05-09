@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+	<link rel="stylesheet" href="/css/main.css">
+	<script type="module" src="js/index.js"></script>
+</head>
+
+<body class="dark-theme">
+	<div class="container">
+		<header>
+			<img src="/images/logo.svg" alt="logo" class="logo">
+			<nav class="nav-list">
+				<ul>
+					<li><a href="#about">О продукте</a></li>
+					<li><a href="#appearance">Внешний вид</a></li>
+					<li><a href="#security">Безопасность</a></li>
+					<li><a href="#reviews">Отзывы</a></li>
+					<li><a href="#faq">FAQ</a></li>
+				</ul>
+			</nav>
+			<button id="profile-btn">Мой профиль</button>
+			<button id="logout-btn">Выйти</button>
+		</header>
+
+		<main>
+			<section class="hero-banner">
+				<img src="/images/scooter.svg" alt="CTA-img" class="hero-banner-image">
+				<div class="hero-banner-content">
+					<h1>Стильный транспорт для города с мощной начинкой</h1>
+					<h3 id="hero-banner-description">Максимальная эффективность для городских поездок. Удобное управление и
+						современный дизайн.</h3>
+					<button type="submit" class="btn-CTA">Арендовать</button>
+				</div>
+			</section>
+
+			<section class="features" id="about">
+				<h2>Выбор транспорта под любые нужды</h2>
+				<div class="features-items">
+					<article class="feature-item">
+						<h3>Три режима езды</h3>
+						<p>Выбирайте режим в зависимости от ваших потребностей и настроения...</p>
+					</article>
+					<article class="feature-item2">
+						<h3>Долгая автономность</h3>
+						<p>Экономичный режим обеспечивает долгую автономность...</p>
+					</article>
+					<article class="feature-item3">
+						<h3>Энергосбережение</h3>
+						<p>Оптимизированные режимы для экономии энергии...</p>
+					</article>
+				</div>
+				<img src="/images/The characteristics card 1.svg" alt="The characteristics card 1" class="feature-image">
+				<img src="/images/The characteristics card 2.svg" alt="The characteristics card 2" class="feature-image2">
+			</section>
+
+			<section class="product-appearance" id="appearance">
+				<h2>Ваше движение — наш транспорт</h2>
+				<img src="/images/design card.svg" alt="product_appearance-banner" class="product_appearance-banner">
+				<img src="/images/design card 2.svg" alt="product_appearance-banner2" class="product_appearance-banner2">
+			</section>
+
+			<section class="care-block" id="security">
+				<h2>Мы заботимся о вас</h2>
+				<div class="care-features">
+					<article class="care-feature">
+						<h3 class="care-feature-title">Надежная батарея</h3>
+						<p>Каждое транспортное средство проходит регулярную проверку...</p>
+					</article>
+					<article class="care-feature">
+						<h3 class="care-feature-title">Устойчивые колеса</h3>
+						<p>Усиленные колеса для любых поверхностей...</p>
+					</article>
+					<article class="care-feature">
+						<h3 class="care-feature-title">Умная система</h3>
+						<p>Современные системы мониторинга состояния транспорта...</p>
+					</article>
+					<article class="care-feature">
+						<h3 class="care-feature-title">Защита пользователя</h3>
+						<p>Световые сигналы, ограничители скорости и система блокировки...</p>
+					</article>
+				</div>
+				<img src="/images/Security Card 1.svg" alt="security-card 1" class="care-feature-image">
+				<img src="/images/Security Card 2.svg" alt="security-card-2" class="care-feature-image-2">
+			</section>
+
+			<section class="reviews-section" id="reviews">
+				<h2>Отзывы о нашей системе</h2>
+				<div class="reviews-container">
+					<div class="rewiews-list">
+						<article class="rewiew-item">
+							<h3>Иван Петров</h3>
+							<p>Отличный продукт! Очень доволен качеством и дизайном.</p>
+						</article>
+						<article class="rewiew-item">
+							<h3>Мария Иванова</h3>
+							<p>Удобно и быстро. Рекомендую всем!</p>
+						</article>
+						<article class="rewiew-item">
+							<h3>Алексей Смирнов</h3>
+							<p>Прекрасный опыт использования. Очень доволен!</p>
+						</article>
+					</div>
+				</div>
+				<div class="review-actions">
+					<button type="submit" class="write_rewiew">Оставить отзыв</button>
+				</div>
+				<button type="button" class="prev-btn">←</button>
+				<button type="button" class="next-btn">→</button>
+			</section>
+
+			<section class="faq-section" id="faq">
+				<div class="faq-container">
+					<div class="faq-left">
+						<h2>Часто задаваемые вопросы</h2>
+						<p class="faq-description">Этот раздел отвечает на самые популярные вопросы...</p>
+						<button class="ask-question-btn">Задать вопрос</button>
+					</div>
+					<div class="faq-right">
+						<article class="faq-item">
+							<h4 class="question">Какие документы нужны для аренды?</h4>
+							<div class="answer">
+								<ul>
+									<li>Паспорт и водительское удостоверение.</li>
+									<li>Банковская карта для депозита</li>
+								</ul>
+							</div>
+						</article>
+						<article class="faq-item">
+							<h4 class="question">Включена ли страховка?</h4>
+							<div class="answer">
+								<p>Да, полная КАСКО включена...</p>
+							</div>
+						</article>
+						<article class="faq-item">
+							<h4 class="question">Где можно оставить авто?</h4>
+							<div class="answer">
+								<p>В любой разрешённой зоне каршеринга...</p>
+							</div>
+						</article>
+						<article class="faq-item">
+							<h4 class="question">Что делать при ДТП?</h4>
+							<div class="answer">
+								<ul>
+									<li>Позвонить в поддержку.</li>
+									<li>Сделать фото.</li>
+									<li>Заполнить европротокол.</li>
+								</ul>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="scooter-section">
+				<div class="scooter-slider">
+					<!-- Слайд 1 -->
+					<div class="scooter-content active">
+						<div class="left-side">
+							<h3 class="product-name">Стандарт</h3>
+							<span class="price">54 990 ₽</span>
+							<button class="rent-button" type="submit">Арендовать</button>
+						</div>
+						<div class="center">
+							<img src="images/product.svg" alt="Самокат" class="scooter-image">
+						</div>
+						<div class="right-side">
+							<h3 class="subtitle">Характеристики</h3>
+							<ul class="specs-list">
+								<li><strong>Вес:</strong> 15 кг</li>
+								<li><strong>Скорость:</strong> 25 км/ч</li>
+								<li><strong>Запас хода:</strong> 45 км</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Слайд 2 -->
+					<div class="scooter-content">
+						<div class="left-side">
+							<h3 class="product-name">Про версия</h3>
+							<span class="price">74 990 ₽</span>
+							<button class="rent-button">Арендовать</button>
+						</div>
+						<div class="center">
+							<img src="images/product.svg" alt="Pro модель" class="scooter-image">
+						</div>
+						<div class="right-side">
+							<h3 class="subtitle">Характеристики</h3>
+							<ul class="specs-list">
+								<li><strong>Вес:</strong> 12 кг</li>
+								<li><strong>Скорость:</strong> 35 км/ч</li>
+								<li><strong>Запас хода:</strong> 60 км</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="slider-controls">
+					<button class="prev-btn">←</button>
+					<div class="slider-dots"></div>
+					<button class="next-btn">→</button>
+				</div>
+			</section>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-content">
+				<div class="footer-left">
+					<p>&copy; 2025 Zipp. Все права защищены.</p>
+				</div>
+				<div class="footer-right">
+					<a href="#">Политика конфиденциальности</a>
+					<a href="#">Условия использования</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="welcome-toast" id="welcome-toast">
+		<div class="toast-content">
+			<span>Добро пожаловать, </span>
+			<span id="toast-email"></span>
+		</div>
+		<div class="progress-bar"></div>
+	</div>
+
+	<button class="scroll-to-top" aria-label="Наверх">↑</button>
+</body>
+
+</html>
