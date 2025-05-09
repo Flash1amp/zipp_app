@@ -41,5 +41,4 @@ Thumbs.db
 *.swo
 
 # Node.js
-node_modules/
 yarn.lock
