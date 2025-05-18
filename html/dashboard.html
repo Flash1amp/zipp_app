@@ -2,11 +2,10 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Админ‑Панель</title>
-	<link rel="stylesheet" href="/css/dashboard.css" />
-	<script type="module" src="/js/dashboard.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Админ-панель</title>
+	<link rel="stylesheet" href="/css/dashboard.css">
 </head>
 
 <body>
@@ -19,37 +18,38 @@
 			<ul class="sidebar-menu">
 				<li><a href="#dashboard">Панель</a></li>
 				<li><a href="#users">Пользователи</a></li>
-				<li><a href="#reports">Отчеты</a></li>
+				<li><a href="#rents">Аренды</a></li>
 				<li><a href="#settings">Настройки</a></li>
 				<li><a href="#" id="logout-link">Выйти</a></li>
 			</ul>
 		</nav>
+
 		<div class="admin-content">
-			<section id="dashboard" class="content-block">
-				<h3 class="block-title">Обзор</h3>
-				<div class="dashboard-info">
-					<h4>Всего пользователей:</h4>
-					<p id="user-count">загрузка...</p>
-				</div>
-				<div class="dashboard-info">
-					<h4>Всего отчетов:</h4>
-					<p id="reports-count">загрузка...</p>
-				</div>
-			</section>
 			<section id="users" class="content-block">
 				<h3 class="block-title">Пользователи</h3>
 				<table>
 					<thead>
 						<tr>
 							<th>Email</th>
-							<th>Зарегистрирован</th>
+							<th>Роль</th>
+							<th>Рейтинг</th>
 						</tr>
 					</thead>
 					<tbody id="users-table"></tbody>
 				</table>
 			</section>
+
 			<section id="rents" class="content-block">
 				<h3 class="block-title">Аренды</h3>
+
+				<!-- Форма добавления аренды -->
+				<form id="add-rental-form" style="margin-bottom: 20px;">
+					<input type="text" id="Item_ID" name="Item_ID" required />
+					<input type="date" id="Start_Date" required>
+					<input type="date" id="End_Date" required>
+					<button type="submit">Добавить аренду</button>
+				</form>
+
 				<table>
 					<thead>
 						<tr>
@@ -63,24 +63,23 @@
 					<tbody id="rents-table"></tbody>
 				</table>
 			</section>
-			<section id="reports" class="content-block">
-				<h3 class="block-title">Отчеты</h3>
-				<table>
-					<thead>
-						<tr>
-							<th>Имя файла</th>
-							<th>Дата загрузки</th>
-						</tr>
-					</thead>
-					<tbody id="reports-table"></tbody>
-				</table>
-			</section>
-			<section id="settings" class="content-block">
-				<h3 class="block-title">Настройки</h3>
-				<p>Параметры приложения...</p>
-			</section>
-		</div>
-	</div>
+
+
+			<!-- Модальное окно редактирования -->
+			<div id="edit-modal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<h3>Редактирование аренды</h3>
+					<form id="edit-form">
+						<input type="hidden" id="edit-id">
+						<label>Дата окончания:</label>
+						<input type="date" id="edit-end-date" required>
+						<button type="submit">Сохранить</button>
+					</form>
+				</div>
+			</div>
+
+			<script type="module" src="/js/dashboard.js"></script>
 </body>
 
 </html>
